@@ -31,5 +31,8 @@ class App < Sinatra::Base
     @number1 = [:number1]
     @number2 = [:number2]
     
+    @math = @number1 @operation @number2
+    @math
+    
   end
 end
