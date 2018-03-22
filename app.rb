@@ -10,6 +10,10 @@ class App < Sinatra::Base
     "#{@user_name.reverse!}!"
   end
   
+  get "/square/:number" do
+    
+  end
+  
   get "/say/:number/:phrase" do
     @number = params[:number]
     @phrase = params[:phrase] 
