@@ -25,5 +25,11 @@ class App < Sinatra::Base
     @words = [params[:word1], params[:word2], params[:word3], params[:word4], params[:word5]].join(" ")
     "#{@words}."
   end
-
+  
+  get "/:operation/:number1/:number2" do
+    @operation = params[:operation]
+    @number1 = [:number1]
+    @number2 = [:number2]
+    
+  end
 end
